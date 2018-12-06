@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+     <title>IQ Games</title>
+     {% load staticfiles %}
+   <link rel="stylesheet" type="text/css" href="{% static 'app/content/css/app.css' %}"/>
+
+<!-- place before </head> -->
+
+</head>
+<body class="front">
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a href="{% url 'home' %}" class="home__link"><img src="{% static 'app/content/images/blue-brain-96.png' %}" alt="IQ Games"/>IQ Games</a>
+            <div class="mobile-trigger">
+                <span class="line first"></span>
+                <span class="line middle"></span>
+                <span class="line last"></span>
+            </div>
+            <nav>
+                <ul class="menu">
+                        <li class="menu-item menu-item--22">
+                            <a href="iq-tests.html">
+                                Education
+                            </a>
+                                                            <i class="fa fa-chevron-down"></i>
+                           <ul class="sub-nav">
+                                                                    <li class="menu-item menu-item--23"><a href="#">Maths Question</a></li>
+                                                                    <li class="menu-item menu-item--24"><a href="#"></a>ETC</li>
+                                                                    <li class="menu-item menu-item--25"><a href="#"></a>ETC</li>
+                                                                    <li class="menu-item menu-item--26"><a href="#"></a>ETC</li>
+                                                                    <li class="menu-item menu-item--27"><a href="#"></a>ETC</li>
+                             </ul>
+                                                    </li>
+                                   <li class="menu-item menu-item--29">
+                            <a href="resources.html">
+                                Entertainment
+                            </a>
+                                                            <i class="fa fa-chevron-down"></i>
+                                                                                        <ul class="sub-nav">
+                                                                    <li class="menu-item menu-item--6"><a href="">Puzzles</a></li>
+                                                                    <li class="menu-item menu-item--12"><a href="">Games</a></li>
+                                                                    <li class="menu-item menu-item--2"><a href="">Cards</a></li>
+                                                                    <li class="menu-item menu-item--3"><a href="">ETC</a></li>
+                                                                    <li class="menu-item menu-item--4"><a href="">Etc</a></li>
+                                                                    <li class="menu-item menu-item--16"><a href="">ETC</a></li>
+                                                                    <li class="menu-item menu-item--11"><a href="">ETC</a></li>
+                                                                </ul>
+                                                    </li>
+                                                                    <li class="menu-item menu-item--30">
+                            <a href="{% url 'home' %}">
+                                Take the Genius Math Test
+                            </a>
+                                                                                </li>
+                                                                    <li class="menu-item menu-item--21">
+                            <a href="{% url 'signin' %}">
+                                Account
+                            </a>
+                                                                                </li>
+                                    </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper">
+    {% block content %}
+
+
+
+    {% endblock %}
+
+
+
+
+</div>
+
+<footer class="footer container-fluid">
+
+</footer>
+
+<script src="{% static 'app/content/js/app.js' %}"></script>
+
+
+</body>
+</html>
